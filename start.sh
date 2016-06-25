@@ -13,7 +13,6 @@ printf "${PURPLE}CHECK LINTING...${NC}\n"
     printf "${RED}✗ Linting Failed: KA-VR${NC}\n"
     testsPassed=false
   fi
-  sleep 2
 } && {
   if ( cd textAnalyzer ; npm run lint &>../error.log) then
     printf "${GREEN}✓ Linting Passed: textAnalyzer${NC}\n"
@@ -21,7 +20,6 @@ printf "${PURPLE}CHECK LINTING...${NC}\n"
     printf "${RED}✗ Linting Failed: textAnalyzer${NC}\n"
     testsPassed=false
   fi
-  sleep 2
 } && {
   if ( cd brainml ; npm run lint &>../error.log) then
     printf "${GREEN}✓ Linting Passed: brainml${NC}\n"
