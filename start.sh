@@ -39,7 +39,7 @@ printf "${PURPLE}CHECK LINTING...${NC}\n"
     printf "${GREEN}✌ Starting Servers...${NC}\n"
     ( cd KA-VR ; npm run watch-server | npm run dev-server | npm run watch-client &>../server.kavr.log) & \
     ( cd textAnalyzer ; npm start &>../server.text.log) & \
-    ( cd brainml ; npm start &>../server.brain.log)
+    ( cd brainml ; npm start &>../server.brain.log) & \
     ( cd apiserver ; npm start &>../server.api.log)
   fi
 }
