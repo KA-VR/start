@@ -1,5 +1,11 @@
+# Log Files
 *.log
+
+# Project Folders
 brainml
 KA-VR
 textAnalyzer
-googlesearch
+apiserver
+
+# Database
+default.graphdb
