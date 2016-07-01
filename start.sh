@@ -37,7 +37,7 @@ printf "${PURPLE}CHECK LINTING...${NC}\n"
 } && { # Start Servers
   if [ "$testsPassed" = true ] ; then
     printf "${GREEN}✌ Starting Servers...${NC}\n"
-    ( cd KA-VR ; npm run watch-server | npm run dev-server | npm run watch-client &>../server.kavr.log) & \
+    ( cd KA-VR ; npm run watch-server | npm run dev-server | npm run watch-client | npm run extension:watch &>../server.kavr.log) & \
     ( cd textAnalyzer ; npm start &>../server.text.log) & \
     ( cd brainml ; npm start &>../server.brain.log) & \
     ( cd apiserver ; npm start &>../server.api.log)
