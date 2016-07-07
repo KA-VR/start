@@ -2,6 +2,7 @@
 *.log
 
 # Project Folders
+braindb
 brainml
 KA-VR
 textAnalyzer
